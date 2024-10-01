@@ -1,0 +1,25 @@
+# Operating system files
+.DS_Store          # macOS
+Thumbs.db         # Windows
+
+# Node.js dependencies
+node_modules/
+
+# Build output
+/dist/
+build/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp              # Vim swap files
+
+# Miscellaneous
+*.tmp
+*.bak
