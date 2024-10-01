@@ -27,8 +27,8 @@ const Navbar = () => {
         </div>
 
         <div className="flex justify-center items-center lg:flex gap-2 mt-6">
-            <span className="bg-[#1abc54] px-3 py-2 font-bold text-xs lg:w-full lg:justify-center inline-flex gap-2 sm:px-2 sm:min-w-fit">
-            <img className="w-4 invert" src={assets.radio_ico} alt="" />
+            <span className="bg-[#282828] px-3 py-2 font-bold text-[7px] lg:text-xs md:text-xs sm:text:xs lg:w-fit lg:justify-center inline-flex gap-2 xs:text-[2px]">
+            <img className="w-2 invert lg:w-4 md:w-4 sm:w-4" src={assets.radio_ico} alt="" />
             New features will add on, your feedback is valuable.
             Dev:@satyajeetsinghz
             </span>
