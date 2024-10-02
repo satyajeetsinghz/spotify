@@ -28,7 +28,7 @@ const Player = () => {
 
             {/* Logic for Play and Pause btn  */}
 
-            {playerStatus ? <img onClick={pause} className="w-6 cursor-pointer invert" src={assets.pause_button} alt="" />
+            {playerStatus ? <img onClick={pause} className="w-6 cursor-pointer invert" src={assets.pause} alt="" />
               : <img onClick={play} className="w-6 cursor-pointer invert" src={assets.play_button} alt="" />}
 
 
@@ -72,7 +72,7 @@ const Player = () => {
 
         <div className="flex items-center gap-3 mr-4">
           <img onClick={previous} className="w-6 cursor-pointer invert" src={assets.prev_button} alt="" />
-          {playerStatus ? <img onClick={pause} className="w-6 cursor-pointer invert" src={assets.pause_button} alt="" />
+          {playerStatus ? <img onClick={pause} className="w-6 cursor-pointer invert" src={assets.pause} alt="" />
             : <img onClick={play} className="w-6 cursor-pointer invert" src={assets.play_button} alt="" />}
           <img onClick={next} className="w-6 cursor-pointer invert" src={assets.next_button} alt="" />
         </div>

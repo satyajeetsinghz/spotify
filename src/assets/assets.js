@@ -13,6 +13,7 @@ import stack_ico from './reorder-two-outline.svg'
 import resize_ico from './resize-outline.svg'
 import volume_ico from './volume-medium-outline.svg'
 import pause_button from './pause-outline.svg'
+import pause from './pause.png'
 import backward_button from './chevron-back-outline.svg'
 import forward_button from './chevron-forward-outline.svg'
 import clock_ico from './time-outline.svg'
@@ -60,6 +61,7 @@ export const assets = {
     next_button,
     play_button,
     pause_button,
+    pause,
     loop_ico,
     radio_ico,
     stack_ico,
