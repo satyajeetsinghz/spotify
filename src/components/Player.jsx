@@ -11,9 +11,9 @@ const Player = () => {
     <>
       <div className="hidden lg:w-full lg:h-[10%] lg:bg-black lg:flex lg:justify-between lg:items-center lg:text-white lg:px-4 md:w-full md:h-[10%] md:bg-black md:flex md:justify-between md:items-center md:text-white md:px-4 sm:w-full sm:h-[10%] sm:bg-black sm:flex sm:justify-between sm:items-center sm:text-white sm:px-4">
 
-      
+
         <div className="hidden lg:flex items-center gap-4">
-          <img className="w-12" src={track.image} alt="" />
+          <img className="w-12 rounded" src={track.image} alt="" />
           <div>
             <p className="text-lg text-white font-bold">{track.name}</p>
             <p className="text-xs font-semibold">{track.description.slice()}</p>
@@ -63,7 +63,7 @@ const Player = () => {
       {/* Mobile View Player */}
       <div className="lg:hidden md:hidden sm:hidden flex h-[10%] w-full items-center justify-between bg-black px-4 py-2 text-white">
         <div className="flex items-center gap-4">
-          <img className="w-12" src={track.image} alt="" />
+          <img className="w-12 rounded" src={track.image} alt="" />
           <div>
             <p className="text-[16px] font-bold text-white">{track.name}</p>
             <p className="text-[10px] font-semibold text-neutral-400">{track.description.slice()}</p>
