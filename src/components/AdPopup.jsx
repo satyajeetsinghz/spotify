@@ -37,11 +37,12 @@ const AdPopup = () => {
             >
               &times;
             </button>
-            <div className='w-fit lg:min-w-[180px] flex items-center gap-10 lg:w-32 p-2 px-3 rounded cursor-pointer'>
+            <div className='w-fit lg:min-w-[180px] flex items-center gap-10 lg:w-32 p-2 pl-1 pr-2 rounded cursor-pointer'>
               <img className='w-16 sm:w-20 md:w-32 lg:mt-4 rounded' src={assets.zayn_album} alt="" />
               <div className='flex flex-col gap-1 mt-2'>
-                <h2 className="text-lg md:text-2xl lg:text-3xl text-teal-50 font-bold w-[225px] lg:w-[345px]">ZAYN's Stardust EP</h2>
-                <p className='text-teal-100 text-xs font-bold md:text-lg lg:text-xl'>Listen Now.</p>
+              <img className='w-16 lg:w-24' src={assets.spotify_logo} alt="" />
+                <h2 className="text-lg md:text-2xl lg:text-3xl text-teal-50 font-bold w-[225px] lg:w-[345px] mt-1">ZAYN's Stardust EP</h2>
+                <p className='text-teal-100 text-xs font-bold md:text-lg lg:text-lg'>Listen Now</p>
               </div>
             </div>
 
