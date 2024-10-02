@@ -1,6 +1,11 @@
+import { useNavigate } from 'react-router-dom'
 import { assets } from '../assets/assets'
 
 const Sidebar = () => {
+
+  // Used for Home page redirection
+  const navigate = useNavigate();
+
   return (
     <div className="w-[25%] h-full p-2 flex-col gap-2 text- hidden lg:flex">
       <div className="bg-[#121212] h-[15%] rounded flex flex-col justify-around ">
@@ -10,7 +15,7 @@ const Sidebar = () => {
         </div> */}
 
         {/* Home icon  */}
-        <div className="flex items-center gap-4 pl-8 cursor-pointer">
+        <div onClick={()=>navigate('/')} className="flex items-center gap-4 pl-8 cursor-pointer">
           <img className='w-5 invert' src={assets.home_icon} alt="" />
           <p className='font-bold text-white text-sm'>Home</p>
         </div>

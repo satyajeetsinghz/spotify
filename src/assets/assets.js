@@ -36,6 +36,13 @@ import zayn_album from './zayn_room_under_the_stairs.jpeg'
 
 
 import Let_Me_Zayn from "./Let Me - ZAYN.mp3"
+import Millionaire from "./Millionaire.mp3"
+import Big_Dawgs from "./Big Dawgs.mp3"
+import Stardust from "./Stardust.mp3"
+import Bad_Blood from "./Bad Blood (Taylors Version).mp3"
+import Light_Switch from "./Light Switch.mp3"
+import Red_Right_Hands from "./Red Right Hand.mp3"
+import Time_Is_Now from "./WWE_ The Time Is Now (John Cena).mp3"
 import zayn_profile from './zayn-profile.jpeg'
 import glory_img from './glory.jpeg'
 
@@ -77,7 +84,11 @@ export const assets = {
     taylor_swift,
     peaky_blinders,
     charlie_puth,
-    zayn_album
+    zayn_album,
+    Bad_Blood,
+    Light_Switch,
+    Red_Right_Hands,
+    Time_Is_Now
 }
 
 // Albums array data:
@@ -154,61 +165,61 @@ export const songsData = [
         id: 0,
         name: "Stardust",
         image: zayn_album,
-        file: Let_Me_Zayn,
+        file: Stardust,
         description: "Rooms Under The Stairs",
-        duration: "3:05"
+        duration: "3:52"
     },
 
     {
         id: 1,
         name: "Big Dawgs",
         image: big_dawgs,
-        file: Let_Me_Zayn,
+        file: Big_Dawgs,
         description: "Hanumankind, Khalani",
-        duration: "3:05"
+        duration: "3:10"
     },
 
     {
         id: 2,
         name: "Millionaire",
         image: glory_yo_yo,
-        file: Let_Me_Zayn,
+        file: Millionaire,
         description: "Yo Yo Honey Singh",
-        duration: "3:05"
+        duration: "3:19"
     },
 
     {
         id: 3,
         name: "Red Right Hands",
         image: peaky_blinders,
-        file: Let_Me_Zayn,
+        file: Red_Right_Hands,
         description: "Peaky Blinders OST",
-        duration: "3:05"
+        duration: "6:10"
     },
 
     {
         id: 4,
-        name: "1969",
+        name: "Bad Blood",
         image: taylor_swift,
-        file: Let_Me_Zayn,
+        file: Bad_Blood,
         description: "Taylor Swift",
-        duration: "3:05"
+        duration: "3:31"
     },
 
     {
         id: 5,
         name: "Time Is Now",
         image: john_cena,
-        file: Let_Me_Zayn,
+        file: Time_Is_Now,
         description: "John Cena, WWE Music",
-        duration: "3:05"
+        duration: "2:56"
     },
 
     {
         id: 6,
         name: "Light Switch",
         image: charlie_puth,
-        file: Let_Me_Zayn,
+        file: Light_Switch,
         description: "Charlie Puth",
         duration: "3:05"
     }

@@ -28,7 +28,7 @@ const DisplayHome = () => {
 
                 {/* Mapping the Songs data in 'DisplayHome' */}
 
-                <h1 className="my-5 font-bold text-2xl">Todays Biggest Hits</h1>
+                <h1 className="my-5 font-bold text-2xl">Top Pick 7</h1>
 
                 {/* Songs mapped data stored here: */}
                 <div className="flex overflow-auto">
