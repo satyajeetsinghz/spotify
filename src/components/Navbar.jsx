@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
         <div className="w-full flex justify-between items-center font-semibold">
             <div className="flex items-center gap-2">
-                <img onClick={() => navigate(-1)} className="w-10 invert p-2  cursor-pointer hover:bg-slate-50 hover:rounded-2xl" src={assets.backward_button} alt="" />
+                <img onClick={() => navigate(-1)} className="w-6 p-2  cursor-pointer hover:bg-neutral-800 hover:rounded-2xl" src={assets.backward_button} alt="" />
                 <img onClick={() => navigate(1)} className="w-10 invert p-2 rounded-2xl cursor-pointer hover:bg-slate-50 hover:rounded-2xl" src={assets.forward_button} alt="" />
             </div>
 

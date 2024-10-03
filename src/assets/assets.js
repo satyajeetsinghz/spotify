@@ -14,7 +14,8 @@ import resize_ico from './resize-outline.svg'
 import volume_ico from './volume-medium-outline.svg'
 import pause_button from './pause-outline.svg'
 import pause from './pause.png'
-import backward_button from './chevron-back-outline.svg'
+// import backward_button from './chevron-back-outline.svg'
+import backward_button from './backward_ico.png'
 import forward_button from './chevron-forward-outline.svg'
 import clock_ico from './time-outline.svg'
 import coldplay from './coldplay.jpeg'
@@ -33,6 +34,7 @@ import peaky_blinders from './peaky_blinders.jpeg'
 import taylor_swift from './taylor_swift_1989.jpeg'
 import zayn_album from './zayn_room_under_the_stairs.jpeg'
 import mood_remix from './mood_remix.jpeg'
+import shree_gami_cover from './shree_gami_chill_beats.jpg'
 
 
 
@@ -48,6 +50,7 @@ import Time_Is_Now from "./WWE_ The Time Is Now (John Cena).mp3"
 import mood_remix_justin from './Mood (Remix) feat. Justin Bieber, J Balvin & iann dior.mp3'
 import bye_bye_nyc_cover from './bye_bye_nyc.jpeg'
 import bye_bye_nyc from "./Bye Bye Bye - From Deadpool and Wolverine Soundtrack.mp3";
+import ut456_shreegami from './UT456shree_gami_chill_beats.mp3';
 import zayn_profile from './zayn-profile.jpeg'
 import glory_img from './glory.jpeg'
 
@@ -98,7 +101,9 @@ export const assets = {
     mood_remix,
     mood_remix_justin,
     bye_bye_nyc_cover,
-    bye_bye_nyc
+    bye_bye_nyc,
+    shree_gami_cover,
+    ut456_shreegami
 }
 
 // Albums array data:
@@ -173,6 +178,14 @@ export const albumsData = [
 export const songsData = [
     {
         id: 0,
+        name: "Japanese Chill Beat",
+        image: shree_gami_cover,
+        file: ut456_shreegami,
+        description: "Shriyam Gera",
+        duration: "0:29"
+    },
+    {
+        id: 1,
         name: "Mood (Remix)",
         image: mood_remix,
         file: mood_remix_justin,
@@ -180,7 +193,7 @@ export const songsData = [
         duration: "3:12"
     },
     {
-        id: 1,
+        id: 2,
         name: "Bye Bye Bye",
         image: bye_bye_nyc_cover,
         file: bye_bye_nyc,
@@ -188,7 +201,7 @@ export const songsData = [
         duration: "3:20"
     },
     {
-        id: 2,
+        id: 3,
         name: "Stardust",
         image: zayn_album,
         file: Stardust,
@@ -197,7 +210,7 @@ export const songsData = [
     },
 
     {
-        id: 3,
+        id: 4,
         name: "Big Dawgs",
         image: big_dawgs,
         file: Big_Dawgs,
@@ -206,7 +219,7 @@ export const songsData = [
     },
 
     {
-        id: 4,
+        id: 5,
         name: "Millionaire",
         image: glory_yo_yo,
         file: Millionaire,
@@ -215,7 +228,7 @@ export const songsData = [
     },
 
     {
-        id: 5,
+        id: 6,
         name: "Red Right Hands",
         image: peaky_blinders,
         file: Red_Right_Hands,
@@ -224,7 +237,7 @@ export const songsData = [
     },
 
     {
-        id: 6,
+        id: 7,
         name: "Bad Blood",
         image: taylor_swift,
         file: Bad_Blood,
@@ -233,7 +246,7 @@ export const songsData = [
     },
 
     {
-        id: 7,
+        id: 8,
         name: "Time Is Now",
         image: john_cena,
         file: Time_Is_Now,
@@ -242,7 +255,7 @@ export const songsData = [
     },
 
     {
-        id: 8,
+        id: 9,
         name: "Light Switch",
         image: charlie_puth,
         file: Light_Switch,
