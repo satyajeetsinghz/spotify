@@ -46,6 +46,8 @@ import Light_Switch from "./Light Switch.mp3"
 import Red_Right_Hands from "./Red Right Hand.mp3"
 import Time_Is_Now from "./WWE_ The Time Is Now (John Cena).mp3"
 import mood_remix_justin from './Mood (Remix) feat. Justin Bieber, J Balvin & iann dior.mp3'
+import bye_bye_nyc_cover from './bye_bye_nyc.jpeg'
+import bye_bye_nyc from "./Bye Bye Bye - From Deadpool and Wolverine Soundtrack.mp3";
 import zayn_profile from './zayn-profile.jpeg'
 import glory_img from './glory.jpeg'
 
@@ -94,7 +96,9 @@ export const assets = {
     Red_Right_Hands,
     Time_Is_Now,
     mood_remix,
-    mood_remix_justin
+    mood_remix_justin,
+    bye_bye_nyc_cover,
+    bye_bye_nyc
 }
 
 // Albums array data:
@@ -177,6 +181,14 @@ export const songsData = [
     },
     {
         id: 1,
+        name: "Bye Bye Bye",
+        image: bye_bye_nyc_cover,
+        file: bye_bye_nyc,
+        description: "From Deadpool and Wolverine Soundtrack",
+        duration: "3:20"
+    },
+    {
+        id: 2,
         name: "Stardust",
         image: zayn_album,
         file: Stardust,
@@ -185,7 +197,7 @@ export const songsData = [
     },
 
     {
-        id: 2,
+        id: 3,
         name: "Big Dawgs",
         image: big_dawgs,
         file: Big_Dawgs,
@@ -194,7 +206,7 @@ export const songsData = [
     },
 
     {
-        id: 3,
+        id: 4,
         name: "Millionaire",
         image: glory_yo_yo,
         file: Millionaire,
@@ -203,7 +215,7 @@ export const songsData = [
     },
 
     {
-        id: 4,
+        id: 5,
         name: "Red Right Hands",
         image: peaky_blinders,
         file: Red_Right_Hands,
@@ -212,7 +224,7 @@ export const songsData = [
     },
 
     {
-        id: 5,
+        id: 6,
         name: "Bad Blood",
         image: taylor_swift,
         file: Bad_Blood,
@@ -221,7 +233,7 @@ export const songsData = [
     },
 
     {
-        id: 6,
+        id: 7,
         name: "Time Is Now",
         image: john_cena,
         file: Time_Is_Now,
@@ -230,7 +242,7 @@ export const songsData = [
     },
 
     {
-        id: 7,
+        id: 8,
         name: "Light Switch",
         image: charlie_puth,
         file: Light_Switch,
