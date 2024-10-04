@@ -53,11 +53,11 @@ const MiniPlayer = ({ onClose }) => {
                     </div>
 
                     <div className="h-full w-full bg-yellow-40 mt-6">
-                        <div className="flex flex-row items-center justify-around gap-0 pb-1]">
+                        <div className="flex flex-row items-center justify-evenly gap-0 pb-1]">
                             <img className='w-6 invert' src={assets.loop_ico} alt="" />
                             <img onClick={previous} className='w-6 invert' src={assets.prev_button} alt="" />
-                            {playerStatus ? <img onClick={pause} className="w-10 cursor-pointer invert" src={assets.pause_filled} alt="" />
-                                : <img onClick={play} className="w-10 cursor-pointer invert" src={assets.play_filled} alt="" />}
+                            {playerStatus ? <img onClick={pause} className="w-12 cursor-pointer invert" src={assets.pause_filled} alt="" />
+                                : <img onClick={play} className="w-12 cursor-pointer invert" src={assets.play_filled} alt="" />}
 
 
                             <img onClick={next} className="w-6 cursor-pointer invert" src={assets.next_button} alt="" />
