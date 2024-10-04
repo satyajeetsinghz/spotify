@@ -1,10 +1,25 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { assets } from "../assets/assets"
 import { PlayerContext } from "../context/PlayerContext"
+import MiniPlayer from "./MiniPlayer";
 
 const Player = () => {
 
   const { track, seekBar, seekBG, playerStatus, play, pause, time, previous, next, seekSong } = useContext(PlayerContext);
+
+  // State to manage if MiniPlayer should be rendered
+  const [isMiniPlayerVisible, setIsMiniPlayerVisible] = useState(false);
+
+  // Function to toggle MiniPlayer visibility
+  const toggleMiniPlayer = () => {
+    setIsMiniPlayerVisible((prev) => !prev);
+  };
+
+  // Function to explicitly close MiniPlayer
+  const closeMiniPlayer = () => {
+    setIsMiniPlayerVisible(false);
+  };
+
 
 
   return (
@@ -61,7 +76,7 @@ const Player = () => {
 
 
       {/* Mobile View Player */}
-      <div className="lg:hidden md:hidden sm:hidden fixed flex h-[10%] w-full items-center justify-between bg-black px-4 py-2 text-white">
+      <div onClick={toggleMiniPlayer} className="lg:hidden md:hidden sm:hidden fixed flex h-[10%] w-full items-center justify-between bg-black px-4 py-2 text-white">
         <div className="flex items-center gap-4">
           <img className="w-12 rounded" src={track.image} alt="" />
           <div>
@@ -71,12 +86,35 @@ const Player = () => {
         </div>
 
         <div className="flex items-center gap-3 mr-4">
-          <img onClick={previous} className="w-6 cursor-pointer invert" src={assets.prev_button} alt="" />
-          {playerStatus ? <img onClick={pause} className="w-6 cursor-pointer invert" src={assets.pause_button} alt="" />
-            : <img onClick={play} className="w-6 cursor-pointer invert" src={assets.play_button} alt="" />}
-          <img onClick={next} className="w-6 cursor-pointer invert" src={assets.next_button} alt="" />
+
+          <img onClick={(e) => {
+            e.stopPropagation(); // Prevent triggering MiniPlayer toggle
+            previous(); // Call your previous track function
+          }} className="w-6 cursor-pointer invert" src={assets.prev_button} alt="" />
+
+
+          {playerStatus ? <img onClick={(e) => {
+            e.stopPropagation(); // Prevent triggering MiniPlayer toggle
+            pause(); // Call your pause function
+          }} className="w-6 cursor-pointer invert" src={assets.pause_button} alt="" />
+            : <img onClick={(e) => {
+              e.stopPropagation(); // Prevent triggering MiniPlayer toggle
+              play(); // Call your play function
+            }} className="w-6 cursor-pointer invert" src={assets.play_button} alt="" />}
+
+
+          <img onClick={(e) => {
+            e.stopPropagation(); // Prevent triggering MiniPlayer toggle
+            next(); // Call your next track function
+          }} className="w-6 cursor-pointer invert" src={assets.next_button} alt="" />
         </div>
+
+        {/* Conditionally render MiniPlayer if visible */}
+        {isMiniPlayerVisible && (
+          <MiniPlayer onClose={closeMiniPlayer} />
+        )}
       </div>
+
     </>
   )
 }

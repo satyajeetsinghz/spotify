@@ -14,8 +14,8 @@ import resize_ico from './resize-outline.svg'
 import volume_ico from './volume-medium-outline.svg'
 import pause_button from './pause-outline.svg'
 import pause from './pause.png'
-// import backward_button from './chevron-back-outline.svg'
-import backward_button from './backward_ico.png'
+import backward_button from './chevron-back-outline.svg'
+// import backward_button from './backward_ico.png'
 import forward_button from './chevron-forward-outline.svg'
 import clock_ico from './time-outline.svg'
 import coldplay from './coldplay.jpeg'
@@ -35,6 +35,10 @@ import taylor_swift from './taylor_swift_1989.jpeg'
 import zayn_album from './zayn_room_under_the_stairs.jpeg'
 import mood_remix from './mood_remix.jpeg'
 import shree_gami_cover from './shree_gami_chill_beats.jpg'
+import play_filled from './play-circle.svg'
+import pause_filled from './pause-circle.svg'
+import down_button from './chevron-down.svg'
+import ellipse_vertical from './ellipsis-vertical.svg'
 
 
 
@@ -103,7 +107,11 @@ export const assets = {
     bye_bye_nyc_cover,
     bye_bye_nyc,
     shree_gami_cover,
-    ut456_shreegami
+    ut456_shreegami,
+    play_filled,
+    pause_filled,
+    down_button,
+    ellipse_vertical
 }
 
 // Albums array data:

@@ -4,6 +4,7 @@ import Player from "./components/Player"
 import Sidebar from "./components/Sidebar"
 import { PlayerContext } from "./context/PlayerContext"
 import AdPopup from "./components/AdPopup"
+import MiniPlayer from "./components/MiniPlayer"
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
         </div>
         <Player />
         <audio ref={audioRef} src={track.file} preload="auto"></audio>
+        {/* <MiniPlayer /> */}
       </div>
     </>
   )
