@@ -26,7 +26,7 @@ const MiniPlayer = ({ onClose }) => {
                     <img onClick={onClose} className='w-5 invert' src={assets.down_button} alt="" />
                     <div className='text-center'>
                         <h2 className='uppercase text-neutral-300 text-[10px] font-bold'>NOW PLAYING</h2>
-                        <p className='text-white text-[8px] uppercase font-semibold text-center'>{track.name}</p>
+                        <p className='text-white text-[8px] font-semibold text-center'>{track.name}</p>
                     </div>
                     <img className='w-5 invert' src={assets.ellipse_vertical} alt="" />
                 </div>
