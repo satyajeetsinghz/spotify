@@ -76,7 +76,7 @@ const Player = () => {
 
 
       {/* Mobile View Player */}
-      <div onClick={toggleMiniPlayer} className="lg:hidden md:hidden sm:hidden fixed flex h-[10%] w-full items-center justify-between bg-black px-4 py-2 text-white">
+      <div onClick={toggleMiniPlayer} className="lg:hidden md:hidden sm:hidden sticky flex h-[10%] w-full items-center justify-between bg-black px-4 py-2 text-white">
         <div className="flex items-center gap-4">
           <img className="w-12 rounded" src={track.image} alt="" />
           <div>
