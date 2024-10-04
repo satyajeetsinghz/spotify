@@ -24,15 +24,15 @@ const MiniPlayer = ({ onClose }) => {
 
                 <div className='flex flex-row py-6 px-8 justify-between items-center'>
                     <img onClick={onClose} className='w-5 invert' src={assets.down_button} alt="" />
-                    <div>
-                        <h2 className='uppercase text-white text-sm font-bold'>Playing from playlist</h2>
-                        <p className='text-white text-xs font-semibold text-center'>Spotify Mini</p>
+                    <div className='text-center'>
+                        <h2 className='uppercase text-neutral-300 text-[10px] font-bold'>Spotify mini</h2>
+                        <p className='text-white text-[6px] uppercase font-semibold text-center'>{track.name}</p>
                     </div>
                     <img className='w-5 invert' src={assets.ellipse_vertical} alt="" />
                 </div>
 
                 <div className="flex h-[100%] w-[100%] items-center justify-center bg-red-40">
-                    <img src={track.image} className="min-w-[350px] sm:w-[520px] object-contain bg-center rounded-md bg-black" />
+                    <img src={track.image} className="min-w-[320px] sm:w-[520px] object-contain bg-center rounded-md bg-black" />
                 </div>
 
                 <div className="h-[35%] mb-8">
