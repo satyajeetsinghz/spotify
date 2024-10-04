@@ -25,8 +25,8 @@ const MiniPlayer = ({ onClose }) => {
                 <div className='flex flex-row py-6 px-8 justify-between items-center'>
                     <img onClick={onClose} className='w-5 invert' src={assets.down_button} alt="" />
                     <div className='text-center'>
-                        <h2 className='uppercase text-neutral-300 text-[10px] font-bold'>Spotify mini</h2>
-                        <p className='text-white text-[6px] uppercase font-semibold text-center'>{track.name}</p>
+                        <h2 className='uppercase text-neutral-300 text-[10px] font-bold'>NOW PLAYING</h2>
+                        <p className='text-white text-[8px] uppercase font-semibold text-center'>{track.name}</p>
                     </div>
                     <img className='w-5 invert' src={assets.ellipse_vertical} alt="" />
                 </div>
@@ -38,8 +38,8 @@ const MiniPlayer = ({ onClose }) => {
                 <div className="h-[35%] mb-8">
                     <div className="flex items-center justify-between px-6 mx-3 py-2 bg-transparent">
                         <div className="">
-                            <h2 className="font-bold text-lg text-white uppercase">{track.name}</h2>
-                            <h2 className="text-sm font-semibold text-neutral-200">{track.description}</h2>
+                            <h2 className="font-bold text-[16px] text-white">{track.name}</h2>
+                            <h2 className="text-xs font-semibold text-neutral-400">{track.description}</h2>
                         </div>
                         <img className='w-6 invert' src={assets.radio_ico} alt="" />
                     </div>
