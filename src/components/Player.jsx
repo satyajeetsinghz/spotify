@@ -38,17 +38,17 @@ const Player = () => {
 
         <div className="flex flex-col items-center gap-1 m-auto">
           <div className="flex gap-4">
-            <img className="w-6 cursor-pointer invert" src={assets.shuffle_icon} alt="" />
-            <img onClick={previous} className="w-6 cursor-pointer invert" src={assets.prev_button} alt="" />
+            <img className="w-5 cursor-pointer" src={assets.shuffle_icon} alt="" />
+            <img onClick={previous} className="w-5 cursor-pointer" src={assets.prev_button} alt="" />
 
             {/* Logic for Play and Pause btn  */}
 
-            {playerStatus ? <img onClick={pause} className="w-6 cursor-pointer invert" src={assets.pause_button} alt="" />
-              : <img onClick={play} className="w-6 cursor-pointer invert" src={assets.play_button} alt="" />}
+            {playerStatus ? <img onClick={pause} className="w-5 cursor-pointer" src={assets.pause_button} alt="" />
+              : <img onClick={play} className="w-5 cursor-pointer" src={assets.play_button} alt="" />}
 
 
-            <img onClick={next} className="w-6 cursor-pointer invert" src={assets.next_button} alt="" />
-            <img className="w-6 cursor-pointer invert" src={assets.loop_ico} alt="" />
+            <img onClick={next} className="w-5 cursor-pointer" src={assets.next_button} alt="" />
+            <img className="w-6 cursor-pointer" src={assets.loop_ico} alt="" />
           </div>
 
           <div className="flex items-center gap-5">
@@ -60,15 +60,14 @@ const Player = () => {
           </div>
         </div>
 
-        <div className="hidden lg:flex items-center gap-2 opacity-75">
-          <img className="w-6 invert" src={assets.shuffle_icon} alt="" />
-          <img className="w-6 invert" src={assets.radio_ico} alt="" />
-          <img className="w-6 invert" src={assets.stack_ico} alt="" />
-          <img className="w-6 invert" src={assets.volume_ico} alt="" />
-          <div className="w-20 bg-slate-50 h-1 rounded">
-
+        <div className="hidden lg:flex items-center gap-2">
+          {/* <img className="w-6" src={assets.shuffle_icon} alt="" /> */}
+          <img className="w-8" src={assets.radio_ico} alt="" />
+          {/* <img className="w-6" src={assets.stack_ico} alt="" /> */}
+          <img className="w-6" src={assets.volume_ico} alt="" />
+          <div className="w-20 bg-neutral-50 h-1 rounded">
           </div>
-          <img className="w-6 invert" src={assets.resize_ico} alt="" />
+          {/* <img className="w-6" src={assets.resize_ico} alt="" /> */}
           {/* <img className="w-6 invert" src={assets.shuffle_icon} alt="" />
         <img className="w-6 invert" src={assets.shuffle_icon} alt="" /> */}
         </div>

@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <>
-    <AdPopup />
+      <AdPopup />
       <div className="h-screen bg-neutral-950">
 
         {/* Sidebar component  */}

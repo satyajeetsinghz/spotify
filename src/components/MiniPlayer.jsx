@@ -41,7 +41,7 @@ const MiniPlayer = ({ onClose }) => {
                             <h2 className="font-bold text-[16px] text-white">{track.name}</h2>
                             <h2 className="text-xs font-semibold text-neutral-400">{track.description}</h2>
                         </div>
-                        <img className='w-6 invert' src={assets.radio_ico} alt="" />
+                        <img className='w-8' src={assets.radio_ico} alt="" />
                     </div>
 
                     <div className="flex items-center justify-center gap-5 mt-5">
@@ -55,13 +55,13 @@ const MiniPlayer = ({ onClose }) => {
                     <div className="h-full w-full bg-yellow-40 mt-6">
                         <div className="flex flex-row items-center justify-evenly gap-0 pb-1]">
                             <img className='w-6 invert' src={assets.loop_ico} alt="" />
-                            <img onClick={previous} className='w-6 invert' src={assets.prev_button} alt="" />
-                            {playerStatus ? <img onClick={pause} className="w-12 cursor-pointer invert" src={assets.pause_filled} alt="" />
-                                : <img onClick={play} className="w-12 cursor-pointer invert" src={assets.play_filled} alt="" />}
+                            <img onClick={previous} className='w-6' src={assets.prev_button} alt="" />
+                            {playerStatus ? <img onClick={pause} className="w-12 invert cursor-pointer" src={assets.pause_filled} alt="" />
+                                : <img onClick={play} className="w-12 invert cursor-pointer" src={assets.play_filled} alt="" />}
 
 
-                            <img onClick={next} className="w-6 cursor-pointer invert" src={assets.next_button} alt="" />
-                            <img className='w-6 invert' src={assets.add_icon} alt="" />
+                            <img onClick={next} className="w-6 cursor-pointer" src={assets.next_button} alt="" />
+                            <img className='w-6' src={assets.add_icon} alt="" />
                         </div>
                     </div>
                 </div>
