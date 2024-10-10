@@ -89,23 +89,23 @@ const Player = () => {
           <img onClick={(e) => {
             e.stopPropagation(); // Prevent triggering MiniPlayer toggle
             previous(); // Call your previous track function
-          }} className="w-6 cursor-pointer invert" src={assets.prev_button} alt="" />
+          }} className="w-6 cursor-pointer" src={assets.prev_button} alt="" />
 
 
           {playerStatus ? <img onClick={(e) => {
             e.stopPropagation(); // Prevent triggering MiniPlayer toggle
             pause(); // Call your pause function
-          }} className="w-6 cursor-pointer invert" src={assets.pause_button} alt="" />
+          }} className="w-6 cursor-pointer" src={assets.pause_button} alt="" />
             : <img onClick={(e) => {
               e.stopPropagation(); // Prevent triggering MiniPlayer toggle
               play(); // Call your play function
-            }} className="w-6 cursor-pointer invert" src={assets.play_button} alt="" />}
+            }} className="w-6 cursor-pointer" src={assets.play_button} alt="" />}
 
 
           <img onClick={(e) => {
             e.stopPropagation(); // Prevent triggering MiniPlayer toggle
             next(); // Call your next track function
-          }} className="w-6 cursor-pointer invert" src={assets.next_button} alt="" />
+          }} className="w-6 cursor-pointer" src={assets.next_button} alt="" />
         </div>
 
         {/* Conditionally render MiniPlayer if visible */}
